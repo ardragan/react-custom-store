@@ -1,5 +1,5 @@
 export const TOGGLE_FAV = 'TOGGLE_FAV';
 
-export const toggleFav = id => {
-    return { type: TOGGLE_FAV, productId: id };
+export const toggleFav = ({productId, qty}) => {
+    return {type: TOGGLE_FAV, payload: {productId, qty}};
 };
